@@ -1,0 +1,86 @@
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title> Pergunta muito importante </title>
+
+<style>
+body {
+    background-color: #ffe6f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* texto */
+h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* botão SIM */
+#sim {
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background-color: #ff4d88;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* botão NÃO */
+#nao {
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    background-color: #cccccc;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h2>
+
+Aceita ser a minha nenem pra sempre? <br>  
+Não duvidar nunca do tanto que eu te amo? <br>
+ Não duvidar do tanto que eu te quero? <br>
+ Não duvidar que você é minha certeza <br>
+  Ficar comigo e não me deixar só? <br>
+</h2>
+
+<button id="sim">SIIIIM </button>
+<button id="nao">NÃOOOO </button>
+
+<script>
+const botaoNao = document.getElementById("nao");
+
+botaoNao.addEventListener("mouseover", () => {
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 50);
+
+    botaoNao.style.left = x + "px";
+    botaoNao.style.top = y + "px";
+});
+
+document.getElementById("sim").addEventListener("click", () => {
+    alert("Obrigado por aceitar por livre e espontânea vontade!! Agora você me deve um cheirinho e um abraço gigante ");
+    
+    window.location.href = "https://www.tiktok.com/@gustavobenicio5/photo/7614354737428843796";
+});
+</script>
+
+</body>
+</html>
